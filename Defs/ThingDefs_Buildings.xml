@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <ThingDef ParentName="BuildingBase">
+    <thingClass>Building</thingClass>
+    <defName>JDSExiledDawnFlagPole</defName>
+    <label>flag pole</label>
+    <description>A simple flagpole.</description>
+    <graphicData>
+      <texPath>Things/FlagPole/FlagPole</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>Cutout</shaderType>
+      <drawSize>(1,2)</drawSize>  
+      <damageData>
+        <rect>(0.35,0.35,0.3,0.3)</rect>
+      </damageData>
+    </graphicData>
+	<rotatable>false</rotatable>
+    <minifiedDef>MinifiedThing</minifiedDef>
+	<thingCategories>
+      <li>Buildings</li>
+    </thingCategories>
+    <castEdgeShadows>true</castEdgeShadows>
+    <altitudeLayer>Building</altitudeLayer>
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <fillPercent>0.05</fillPercent>
+	<inspectorTabs>
+      <li>FactionColors.ITab_FactionColor</li>
+    </inspectorTabs>
+    <statBases>
+      <Mass>15</Mass>
+      <MaxHitPoints>350</MaxHitPoints>
+      <WorkToMake>100</WorkToMake>
+      <Flammability>1.0</Flammability>
+      <Beauty>10</Beauty>
+    </statBases>
+    <size>(1,1)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <researchPrerequisites>
+      <li>JDSExiledDawnArmory</li>
+    </researchPrerequisites>	
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="FactionColors.CompProperties_FlagDrawer">
+        <compClass>FactionColors.CompFlagDrawer</compClass>
+        <DrawOffset>(0,0,0.8)</DrawOffset>
+      </li>
+    </comps>
+    <costStuffCount>20</costStuffCount>
+    <costList>
+      <Cloth>10</Cloth>
+    </costList>
+    <pathCost>50</pathCost>
+    <passability>PassThroughOnly</passability>
+    <designationCategory>Furniture</designationCategory>
+  </ThingDef> 
+
+ </Defs>
